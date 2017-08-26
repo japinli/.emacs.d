@@ -15,6 +15,7 @@
       
 (defvar robin-packages
   '(ace-window
+    editorconfig
     flymd
     markdown-mode
     nlinum
