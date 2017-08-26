@@ -22,4 +22,12 @@
 	scroll-conservatively 1000
 	scroll-preserve-screen-position 1)
 
+;; use avy to navigate to visiable things
+(require 'avy)
+
+;; automatically insert pairs
+(require 'smartparens-config)
+(smartparens-global-mode 1)
+(show-smartparens-global-mode 1)
+
 (provide 'robin-editor)

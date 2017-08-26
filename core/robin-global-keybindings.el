@@ -11,4 +11,6 @@
 (global-set-key (kbd "M-z") 'zop-up-to-char)
 (global-set-key (kbd "M-Z") 'zop-to-char)
 
+(global-set-key (kbd "C-c j") 'avy-goto-word-or-subword-1)
+
 (provide 'robin-global-keybindings)

@@ -15,10 +15,12 @@
       
 (defvar robin-packages
   '(ace-window
+    avy
     editorconfig
     flymd
     markdown-mode
-    nlinum
+		nlinum
+		smartparens
     undo-tree
     which-key
     zop-to-char)

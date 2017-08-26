@@ -4,6 +4,11 @@
 ;;
 ;; version: 0.1
 
+;; disable tool bar and menu bar
+(when (fboundp 'tool-bar-mode)
+	(tool-bar-mode -1))
+(menu-bar-mode -1)
+
 ;; mode line settings
 (column-number-mode t)
 
