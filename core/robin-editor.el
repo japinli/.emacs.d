@@ -10,4 +10,7 @@
 ;; enable some cool extensions like C-x C-j (dired-jump)
 (require 'dired-x)
 
+;; replace the standard Emacs's undo system with undo-tree
+(global-undo-tree-mode)
+
 (provide 'robin-editor)

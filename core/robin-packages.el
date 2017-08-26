@@ -18,6 +18,7 @@
     flymd
     markdown-mode
     nlinum
+    undo-tree
     which-key
     zop-to-char)
   "A list of packages to ensure are installed at launch.")
