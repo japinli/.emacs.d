@@ -17,4 +17,9 @@
 (require 'editorconfig)
 (editorconfig-mode 1)
 
+;; nice scrolling
+(setq scroll-margin 0
+	scroll-conservatively 1000
+	scroll-preserve-screen-position 1)
+
 (provide 'robin-editor)
