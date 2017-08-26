@@ -7,4 +7,7 @@
 ;; change leading characters for each window used by ace-window
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
+;; enable some cool extensions like C-x C-j (dired-jump)
+(require 'dired-x)
+
 (provide 'robin-editor)

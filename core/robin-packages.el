@@ -15,6 +15,8 @@
       
 (defvar robin-packages
   '(ace-window
+    flymd
+    markdown-mode
     nlinum
     which-key
     zop-to-char)
@@ -47,5 +49,9 @@
 
 ;; package installation
 (robin-install-packages)
+
+(when (package-installed-p 'markdown-mode)
+  (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
+  (add-to-list 'auto-mode-alist '("\\.markdown\\'" . gfm-mode)))
 
 (provide 'robin-packages)
