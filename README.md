@@ -17,13 +17,15 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
 * [smartparens][] - Deal with parens pairs and tries to be smart about it.
 * [undo-tree][] - Treat undo history as a tree.
 * [which-key][] - Display available keybindings in popup.
-* [zop-tochar][] - A visual zap-to-char command for emacs.
+* [zop-to-char][] - A visual zap-to-char command for emacs.
 
 ## Global keybindings
 
  Keybindings | Description
 :------------|--------------
  M-p         | Switch window using ace-window
+ C-c j       | Jump to specific character.
+ C-x C-j     | Show current directory file list.
 
 Copyright (c) Japin Li <japinli@hotmail.com>
 
