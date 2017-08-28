@@ -24,5 +24,7 @@
 ;; load Robin core stuff
 (require 'robin-packages)
 (require 'robin-ui)
+(require 'robin-core)
+(require 'robin-mode)
 (require 'robin-editor)
 (require 'robin-global-keybindings)

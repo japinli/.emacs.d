@@ -30,4 +30,7 @@
 (smartparens-global-mode 1)
 (show-smartparens-global-mode 1)
 
+;; enable robin mode
+(robin-global-mode +1)
+
 (provide 'robin-editor)

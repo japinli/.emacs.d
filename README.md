@@ -22,10 +22,14 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
 ## Global keybindings
 
  Keybindings | Description
-:------------|--------------
+:------------|:--------------
  M-p         | Switch window using ace-window
  C-c j       | Jump to specific character.
  C-x C-j     | Show current directory file list.
+ C-c g       | Search using Google.
+ C-c G       | Search using GitHub.
+ C-c s       | Search using Stackoverflow.
+
 
 Copyright (c) Japin Li <japinli@hotmail.com>
 
