@@ -33,4 +33,7 @@
 ;; enable robin mode
 (robin-global-mode +1)
 
+;; change flymd temporary output directory
+(setq flymd-output-directory robin-temp-dir)
+
 (provide 'robin-editor)

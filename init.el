@@ -15,6 +15,8 @@
   "The root dir of the Emacs Robin distribution")
 (defvar robin-core-dir (expand-file-name "core" robin-dir)
   "The directory of Robin's core functionality")
+(defvar robin-temp-dir "/tmp"
+  "This directory is used to store temporary files.")
 
 ;; add Robin's directories to Emacs's `load-path'
 (add-to-list 'load-path robin-core-dir)
