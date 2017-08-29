@@ -29,9 +29,10 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
  C-c g       | Search using Google.
  C-c G       | Search using GitHub.
  C-c s       | Search using Stackoverflow.
+ F8          | Toggle NeoTree.
 
 
-Copyright (c) Japin Li <japinli@hotmail.com>
+Copyright (c) Japin Li, <japinli@hotmail.com>
 
 [bbatsov's prelude]: https://github.com/bbatsov/prelude
 [ace-window]: https://github.com/abo-abo/ace-window

@@ -12,13 +12,14 @@
 ;; set package directory to be relative to Robin install path
 (setq package-user-dir (expand-file-name "elpa" robin-dir))
 (package-initialize)
-      
+
 (defvar robin-packages
   '(ace-window
     avy
     editorconfig
     flymd
     markdown-mode
+    neotree
 		nlinum
 		smartparens
     undo-tree

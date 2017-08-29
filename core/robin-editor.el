@@ -36,4 +36,8 @@
 ;; change flymd temporary output directory
 (setq flymd-output-directory robin-temp-dir)
 
+;; NeoTree
+(require 'neotree)
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
 (provide 'robin-editor)

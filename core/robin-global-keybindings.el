@@ -13,4 +13,7 @@
 
 (global-set-key (kbd "C-c j") 'avy-goto-word-or-subword-1)
 
+;; toggle NeoTree
+(global-set-key [f8] 'neotree-toggle)
+
 (provide 'robin-global-keybindings)
