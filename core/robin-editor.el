@@ -4,6 +4,9 @@
 ;;
 ;; version: 0.1
 
+;; do not backup files
+(setq make-backup-files nil)
+
 ;; change leading characters for each window used by ace-window
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
