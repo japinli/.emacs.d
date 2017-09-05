@@ -42,5 +42,9 @@
 ;; NeoTree
 (require 'neotree)
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+;; refresh NeoTree buffer automatically
+(setq neo-autorefresh t)
+;; find current file and jump to node
+(setq neo-smart-open t)
 
 (provide 'robin-editor)
