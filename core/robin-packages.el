@@ -20,7 +20,8 @@
     flymd
     markdown-mode
     neotree
-		nlinum
+    nlinum
+    projectile
 		smartparens
     undo-tree
     which-key

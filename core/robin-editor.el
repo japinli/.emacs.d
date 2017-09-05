@@ -47,4 +47,7 @@
 ;; find current file and jump to node
 (setq neo-smart-open t)
 
+;; enable Projectile
+(setq projectile-mode t)
+
 (provide 'robin-editor)
