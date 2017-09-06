@@ -48,6 +48,7 @@
 (setq neo-smart-open t)
 
 ;; enable Projectile
-(setq projectile-mode t)
+(projectile-global-mode t)
+(setq projectile-cache-file (expand-file-name "projectile.cache" robin-save-dir))
 
 (provide 'robin-editor)
