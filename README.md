@@ -14,6 +14,7 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
 * [flymd][] - On the fly markdown preview.
 * [markdown-mode][] - Markdown-formatted text plugin for Emacs.
 * [nlinum][] - Show line numbers in the margin.
+* [projectile][] - Project interaction library for Emacs.
 * [smartparens][] - Deal with parens pairs and tries to be smart about it.
 * [undo-tree][] - Treat undo history as a tree.
 * [which-key][] - Display available keybindings in popup.
@@ -41,6 +42,7 @@ Copyright (c) Japin Li, <japinli@hotmail.com>
 [flymd]: https://github.com/mola-T/flymd
 [markdown-mode]: https://github.com/jrblevin/markdown-mode
 [nlinum]: https://github.com/emacsmirror/nlinum
+[projectile]: https://github.com/bbatsov/projectile
 [smartparens]: https://github.com/Fuco1/smartparens
 [undo-tree]: https://github.com/emacsmirror/undo-tree
 [which-key]: https://github.com/justbur/emacs-which-key
