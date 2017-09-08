@@ -30,6 +30,7 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
  C-c g       | Search using Google.
  C-c G       | Search using GitHub.
  C-c s       | Search using Stackoverflow.
+ C-c p f     | Find a file in a project. More shortcuts see [projectile usage][].
  F8          | Toggle NeoTree.
 
 
@@ -47,3 +48,4 @@ Copyright (c) Japin Li, <japinli@hotmail.com>
 [undo-tree]: https://github.com/emacsmirror/undo-tree
 [which-key]: https://github.com/justbur/emacs-which-key
 [zop-to-char]: https://github.com/thierryvolpiatto/zop-to-char
+[projectile usage]: https://github.com/bbatsov/projectile/blob/master/doc/usage.md
