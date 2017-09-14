@@ -59,10 +59,15 @@
 ;; counsel-gtags
 (add-hook 'c-mode-hook 'counsel-gtags-mode)
 (add-hook 'c++-mode-hook 'counsel-gtags-mode)
-;; (with-eval-after-load 'counsel-gtags
-;;   (define-key counsel-gtags-mode-map (kbd "M-") 'counsel-gtags-find-definition)
-;;   (define-key counsel-gtags-mode-map (kbd "M-") 'counsel-gtags-find-reference)
-;;   (define-key counsel-gtags-mode-map (kbd "M-") 'counsel-gtags-find-symbol)
-;;   (define-key counsel-gtags-mode-map (kbd "M-") 'counsel-gtags-go-backward))
+(with-eval-after-load 'counsel-gtags
+  (define-key counsel-gtags-mode-map (kbd "C-c f d") 'counsel-gtags-find-definition)
+  (define-key counsel-gtags-mode-map (kbd "C-c f r") 'counsel-gtags-find-reference)
+  (define-key counsel-gtags-mode-map (kbd "C-c f s") 'counsel-gtags-find-symbol)
+  (define-key counsel-gtags-mode-map (kbd "C-c f b") 'counsel-gtags-go-backward)
+  (define-key counsel-gtags-mode-map (kbd "C-c f f") 'counsel-gtags-find-file))
+
+;; helm
+(require 'helm-projectile)
+(helm-projectile-on)
 
 (provide 'robin-editor)

@@ -19,6 +19,7 @@
     counsel-gtags
     editorconfig
     flymd
+    helm-projectile
     markdown-mode
     neotree
     nlinum
