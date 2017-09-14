@@ -16,13 +16,15 @@
 (defvar robin-packages
   '(ace-window
     avy
+    counsel-gtags
     editorconfig
     flymd
     markdown-mode
     neotree
     nlinum
     projectile
-		smartparens
+    smartparens
+    swiper
     undo-tree
     which-key
     zop-to-char)

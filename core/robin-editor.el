@@ -51,4 +51,18 @@
 (projectile-global-mode t)
 (setq projectile-cache-file (expand-file-name "projectile.cache" robin-save-dir))
 
+;; swiper
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
+
+;; counsel-gtags
+(add-hook 'c-mode-hook 'counsel-gtags-mode)
+(add-hook 'c++-mode-hook 'counsel-gtags-mode)
+;; (with-eval-after-load 'counsel-gtags
+;;   (define-key counsel-gtags-mode-map (kbd "M-") 'counsel-gtags-find-definition)
+;;   (define-key counsel-gtags-mode-map (kbd "M-") 'counsel-gtags-find-reference)
+;;   (define-key counsel-gtags-mode-map (kbd "M-") 'counsel-gtags-find-symbol)
+;;   (define-key counsel-gtags-mode-map (kbd "M-") 'counsel-gtags-go-backward))
+
 (provide 'robin-editor)

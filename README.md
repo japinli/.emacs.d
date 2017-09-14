@@ -16,6 +16,7 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
 * [nlinum][] - Show line numbers in the margin.
 * [projectile][] - Project interaction library for Emacs.
 * [smartparens][] - Deal with parens pairs and tries to be smart about it.
+* [swiper][] -  Flexible, simple tools for minibuffer completion in Emacs.
 * [undo-tree][] - Treat undo history as a tree.
 * [which-key][] - Display available keybindings in popup.
 * [zop-to-char][] - A visual zap-to-char command for emacs.
@@ -45,6 +46,7 @@ Copyright (c) Japin Li, <japinli@hotmail.com>
 [nlinum]: https://github.com/emacsmirror/nlinum
 [projectile]: https://github.com/bbatsov/projectile
 [smartparens]: https://github.com/Fuco1/smartparens
+[swiper]: https://github.com/abo-abo/swiper
 [undo-tree]: https://github.com/emacsmirror/undo-tree
 [which-key]: https://github.com/justbur/emacs-which-key
 [zop-to-char]: https://github.com/thierryvolpiatto/zop-to-char
