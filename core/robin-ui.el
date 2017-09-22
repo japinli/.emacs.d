@@ -22,4 +22,7 @@
 (require 'which-key)
 (which-key-mode)
 
+(when robin-theme
+  (load-theme robin-theme t))
+
 (provide 'robin-ui)
