@@ -71,4 +71,7 @@
 (require 'helm-projectile)
 (helm-projectile-on)
 
+;; emamux
+(require 'emamux)
+
 (provide 'robin-editor)

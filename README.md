@@ -13,6 +13,7 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
 * [avy][] - Jump to things in Emacs tree-style.
 * [counsel-gtags][] - [GNU GLOBAL][] interface of ivy.
 * [editorconfig][] - Define and maintain code styles.
+* [emamux][] - Let Emacs interact with [tmux][]
 * [flymd][] - On the fly markdown preview.
 * [helm-projectile][] - Helm UI for Projectile.
 * [markdown-mode][] - Markdown-formatted text plugin for Emacs.
@@ -41,6 +42,7 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
  C-c f b     | Go to previous position in context stack.
  C-c f f     | Search for file among tagged files.
  F8          | Toggle NeoTree.
+ C-t         | Emamux prefix key.
 
 
 Copyright (c) Japin Li, <japinli@hotmail.com>
@@ -62,3 +64,5 @@ Copyright (c) Japin Li, <japinli@hotmail.com>
 [zop-to-char]: https://github.com/thierryvolpiatto/zop-to-char
 [projectile usage]: https://github.com/bbatsov/projectile/blob/master/doc/usage.md
 [GUN GLOBAL]: https://www.gnu.org/software/global/
+[emamux]: https://github.com/syohex/emacs-emamux/
+[tmux]: https://github.com/tmux/tmux

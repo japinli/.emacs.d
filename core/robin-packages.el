@@ -18,6 +18,7 @@
     avy
     counsel-gtags
     editorconfig
+    emamux
     flymd
     helm-projectile
     markdown-mode
