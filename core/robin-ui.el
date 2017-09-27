@@ -25,4 +25,12 @@
 (when robin-theme
   (load-theme robin-theme t))
 
+(setq mode-line-position
+  '((line-number-mode ("(%l" column-number-mode (",%c)")))))
+
+(setq-default mode-line-format
+  '("%e"
+     " %b [%m] "
+     mode-line-position))
+
 (provide 'robin-ui)
