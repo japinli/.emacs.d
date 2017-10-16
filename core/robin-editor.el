@@ -74,4 +74,12 @@
 ;; emamux
 (require 'emamux)
 
+;; ycmd
+(require 'ycmd)
+(defvar robin-ycmd-dir (file-truename "~/.local/ycmd/"))
+(add-hook 'c-mode-hook 'ycmd-mode)
+(add-hook 'c++-mode-hook 'ycmd-mode)
+(set-variable 'ycmd-server-command `("python" ,(file-truename "~/.local/ycmd/ycmd")))
+(set-variable 'ycmd-global-config (expand-file-name "examples/.ycm_extra_conf.py" robin-ycmd-dir))
+
 (provide 'robin-editor)

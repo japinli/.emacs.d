@@ -16,9 +16,11 @@
 (defvar robin-packages
   '(ace-window
     avy
+    company-ycmd
     counsel-gtags
     editorconfig
     emamux
+    flycheck-ycmd
     flymd
     helm-projectile
     markdown-mode
@@ -29,6 +31,7 @@
     swiper
     undo-tree
     which-key
+    ycmd
     zop-to-char)
   "A list of packages to ensure are installed at launch.")
 
