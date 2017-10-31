@@ -4,6 +4,10 @@
 ;;
 ;; version: 0.1
 
+;;; Commentary:
+
+;;; Code:
+
 ;; disable tool bar and menu bar
 (when (fboundp 'tool-bar-mode)
 	(tool-bar-mode -1))
@@ -26,3 +30,4 @@
   (load-theme robin-theme t))
 
 (provide 'robin-ui)
+;;; robin-ui.el ends here

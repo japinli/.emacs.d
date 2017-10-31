@@ -13,7 +13,7 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
 * [avy][] - Jump to things in Emacs tree-style.
 * [counsel-gtags][] - [GNU GLOBAL][] interface of ivy.
 * [editorconfig][] - Define and maintain code styles.
-* [emamux][] - Let Emacs interact with [tmux][]
+* [emamux][] - Let Emacs interact with [tmux][].
 * [flymd][] - On the fly markdown preview.
 * [helm-projectile][] - Helm UI for Projectile.
 * [markdown-mode][] - Markdown-formatted text plugin for Emacs.
@@ -36,11 +36,11 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
  C-c G       | Search using GitHub.
  C-c s       | Search using Stackoverflow.
  C-c p f     | Find a file in a project. More shortcuts see [projectile usage][].
- C-c f s     | Search for symbol references.
- C-c f r     | Search for references.
- C-c f d     | Search for definition.
- C-c f b     | Go to previous position in context stack.
- C-c f f     | Search for file among tagged files.
+ C-c g s     | Search for symbol references.
+ C-c g r     | Search for references.
+ C-c g d     | Search for definition.
+ C-c g b     | Go to previous position in context stack.
+ C-c g f     | Search for file among tagged files.
  F8          | Toggle NeoTree.
  C-t         | Emamux prefix key.
 

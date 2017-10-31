@@ -3,6 +3,9 @@
 ;; Copyright (c) 2017 Japin Li <japinli@hotmail.com>
 ;;
 ;; version 0.1
+;;; Commentary:
+
+;;; Code:
 
 (require 'cl)
 (require 'package)
@@ -16,6 +19,7 @@
 (defvar robin-packages
   '(ace-window
     avy
+    company
     company-ycmd
     counsel-gtags
     editorconfig
@@ -47,11 +51,11 @@
     (package-install package)))
 
 (defun robin-require-packages (packages)
-  "Ensure PACKAGES are installed. Missing packages are installed automatically."
+  "Ensure PACKAGES are installed.  Missing packages are installed automatically."
   (mapc #'robin-require-package packages))
 
 (defun robin-install-packages ()
-  "Install all packages listed in `robin-packages'"
+  "Install all packages listed in `robin-packages'."
   (unless (robin-packages-installed-p)
     ;; check for new packages
     (message "Emacs Robin is new refreshing its package database...")
@@ -68,3 +72,4 @@
   (add-to-list 'auto-mode-alist '("\\.markdown\\'" . gfm-mode)))
 
 (provide 'robin-packages)
+;;; robin-packages.el ends here

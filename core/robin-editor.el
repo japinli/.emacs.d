@@ -3,11 +3,16 @@
 ;; Copyright (c) 2017 Japin Li <japinli@hotmail.com>
 ;;
 ;; version: 0.1
+;;
+;;; Commentary:
+
+;;; Code:
 
 ;; do not backup files
 (setq make-backup-files nil)
 
 ;; change leading characters for each window used by ace-window
+(require 'ace-window)
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 ;; enable some cool extensions like C-x C-j (dired-jump)
@@ -35,9 +40,10 @@
 (show-smartparens-global-mode 1)
 
 ;; enable robin mode
-(robin-global-mode +1)
+;;(robin-global-mode t)
 
 ;; change flymd temporary output directory
+(require 'flymd)
 (setq flymd-output-directory robin-temp-dir)
 
 ;; NeoTree
@@ -49,23 +55,29 @@
 (setq neo-smart-open t)
 
 ;; enable Projectile
-(projectile-global-mode t)
+(require 'projectile)
+(projectile-mode t)
 (setq projectile-cache-file (expand-file-name "projectile.cache" robin-save-dir))
 
 ;; swiper
+(require 'ivy)
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
 
 ;; counsel-gtags
+(require 'counsel-gtags)
 (add-hook 'c-mode-hook 'counsel-gtags-mode)
 (add-hook 'c++-mode-hook 'counsel-gtags-mode)
 (with-eval-after-load 'counsel-gtags
-  (define-key counsel-gtags-mode-map (kbd "C-c f d") 'counsel-gtags-find-definition)
-  (define-key counsel-gtags-mode-map (kbd "C-c f r") 'counsel-gtags-find-reference)
-  (define-key counsel-gtags-mode-map (kbd "C-c f s") 'counsel-gtags-find-symbol)
-  (define-key counsel-gtags-mode-map (kbd "C-c f b") 'counsel-gtags-go-backward)
-  (define-key counsel-gtags-mode-map (kbd "C-c f f") 'counsel-gtags-find-file))
+  (define-key counsel-gtags-mode-map (kbd "C-c g d") 'counsel-gtags-find-definition)
+  (define-key counsel-gtags-mode-map (kbd "C-c g r") 'counsel-gtags-find-reference)
+  (define-key counsel-gtags-mode-map (kbd "C-c g s") 'counsel-gtags-find-symbol)
+  (define-key counsel-gtags-mode-map (kbd "C-c g b") 'counsel-gtags-go-backward)
+  (define-key counsel-gtags-mode-map (kbd "C-c g p") 'counsel-gtags-go-forward)
+  (define-key counsel-gtags-mode-map (kbd "C-c g f") 'counsel-gtags-find-file)
+  (define-key counsel-gtags-mode-map (kbd "C-c g c") 'counsel-gtags-dwim)
+  (define-key counsel-gtags-mode-map (kbd "C-c g u") 'counsel-gtags-update-tags))
 
 ;; helm
 (require 'helm-projectile)
@@ -74,12 +86,23 @@
 ;; emamux
 (require 'emamux)
 
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; ycmd
 (require 'ycmd)
 (defvar robin-ycmd-dir (file-truename "~/.local/ycmd/"))
-(add-hook 'c-mode-hook 'ycmd-mode)
-(add-hook 'c++-mode-hook 'ycmd-mode)
+(add-hook 'after-init-hook #'global-ycmd-mode)
 (set-variable 'ycmd-server-command `("python" ,(file-truename "~/.local/ycmd/ycmd")))
 (set-variable 'ycmd-global-config (expand-file-name "examples/.ycm_extra_conf.py" robin-ycmd-dir))
 
+(global-company-mode t)
+(require 'company-ycmd)
+(company-ycmd-setup)
+(require 'flycheck-ycmd)
+(global-flycheck-mode t)
+(flycheck-ycmd-setup)
+
+
 (provide 'robin-editor)
+;;; robin-editor.el ends here

@@ -3,6 +3,9 @@
 ;; Copyright (c) 2017 Japin Li <japinli@hotmail.com>
 ;;
 ;; version 0.1
+;;; Commentary:
+
+;;; Code:
 
 (defvar robin-mode-map
   (let ((map (make-sparse-keymap)))
@@ -29,3 +32,4 @@
   (robin-mode -1))
 
 (provide 'robin-mode)
+;;; robin-mode.el ends here
