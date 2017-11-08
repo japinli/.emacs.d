@@ -74,8 +74,8 @@
   (define-key counsel-gtags-mode-map (kbd "C-c g r") 'counsel-gtags-find-reference)
   (define-key counsel-gtags-mode-map (kbd "C-c g s") 'counsel-gtags-find-symbol)
   (define-key counsel-gtags-mode-map (kbd "C-c g b") 'counsel-gtags-go-backward)
-  (define-key counsel-gtags-mode-map (kbd "C-c g p") 'counsel-gtags-go-forward)
-  (define-key counsel-gtags-mode-map (kbd "C-c g f") 'counsel-gtags-find-file)
+  (define-key counsel-gtags-mode-map (kbd "C-c g f") 'counsel-gtags-go-forward)
+  (define-key counsel-gtags-mode-map (kbd "C-c g F") 'counsel-gtags-find-file)
   (define-key counsel-gtags-mode-map (kbd "C-c g c") 'counsel-gtags-dwim)
   (define-key counsel-gtags-mode-map (kbd "C-c g u") 'counsel-gtags-update-tags))
 
