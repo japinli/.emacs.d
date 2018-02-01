@@ -95,6 +95,7 @@
 (add-hook 'after-init-hook #'global-ycmd-mode)
 (set-variable 'ycmd-server-command `("python" ,(file-truename "~/.local/ycmd/ycmd")))
 (set-variable 'ycmd-global-config (expand-file-name "examples/.ycm_extra_conf.py" robin-ycmd-dir))
+(set-variable 'ycmd-extra-conf-handler 'load)
 
 (global-company-mode t)
 (require 'company-ycmd)
