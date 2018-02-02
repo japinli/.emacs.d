@@ -422,6 +422,40 @@ Also affects 'linum-mode' background."
                                     :color ,robin-256-gray
                                     :style unspecified)))))
 
+    ;; dired
+    `(dired-directory
+       ((,robin-class (:foreground ,robin-blue))
+         (,robin-256-class (:foreground ,robin-256-blue))))
+    `(dired-flagged
+       ((,robin-class (:foreground ,robin-red))
+         (,robin-256-class (:foreground ,robin-256-red))))
+    `(dired-header
+       ((,robin-class (:foreground ,robin-blue
+                        :background ,robin-background
+                        :inherit bold))
+         (,robin-256-class (:foreground ,robin-256-blue
+                              :background ,robin-256-background
+                             :inherit bold))))
+    `(dired-ignored
+       ((,robin-class (:inherit shadow))
+         (,robin-256-class (:inherit shadow))))
+    `(dired-mark
+       ((,robin-class (:foreground ,robin-green :weight bold))
+         (,robin-256-class (:foreground ,robin-256-green :weight bold))))
+    `(dired-marked
+       ((,robin-class (:foreground ,robin-violet :inherit bold))
+         (,robin-256-class (:foreground ,robin-256-violet :inherit bold))))
+    `(dired-perm-write
+       ((,robin-class (:foreground ,robin-foreground :underline t))
+         (,robin-256-class (:foreground ,robin-256-foreground :underline t))))
+    `(dired-symlink
+       ((,robin-class (:foreground ,robin-cyan :slant italic))
+         (,robin-256-class (:foreground ,robin-256-cyan :slant italic))))
+    `(dired-warning
+       ((,robin-class (:foreground ,robin-orange :underline t))
+         (,robin-256-class (:foreground ,robin-256-orange :underline t))))
+
+
     ))
 
 ;;; ###autoload
