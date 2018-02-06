@@ -30,7 +30,7 @@
 (global-set-key (kbd "C-t") emamux:keymap)
 
 ;; imenu-list
-(global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
+(global-set-key (kbd "C-i") #'imenu-list-smart-toggle)
 
 (provide 'robin-global-keybindings)
 ;;; robin-global-keybindings ends here
