@@ -104,6 +104,10 @@
 (global-flycheck-mode t)
 (flycheck-ycmd-setup)
 
+;; imenu-list
+(require 'imenu-list)
+(setq imenu-list-auto-resize t)
+(setq imenu-list-position 'left)
 
 (provide 'robin-editor)
 ;;; robin-editor.el ends here

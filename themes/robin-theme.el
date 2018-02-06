@@ -455,6 +455,29 @@ Also affects 'linum-mode' background."
        ((,robin-class (:foreground ,robin-orange :underline t))
          (,robin-256-class (:foreground ,robin-256-orange :underline t))))
 
+    ;; dorpdown
+    `(dropdown-list-face
+       ((,robin-class (:background ,robin-highlight-line
+                        :foreground ,robin-blue))
+         (,robin-256-class (:background ,robin-256-highlight-line
+                             :foreground ,robin-256-blue))))
+    `(dropdown-list-selection-face
+       ((,robin-class (:background ,robin-blue
+                        :foreground ,robin-background))
+         (,robin-256-class (:background ,robin-256-blue
+                             :foreground ,robin-256-background))))
+
+    ;; isearch
+    `(isearch
+       ((,robin-class (:inherit region :foreground ,robin-background
+                        :background ,robin-yellow))
+         (,robin-256-class (:inherit region :foreground ,robin-256-background
+                             :background ,robin-256-yellow))))
+    `(isearch-fail
+       ((,robin-class (:inherit isearch :foreground ,robin-red
+                        :background ,robin-background :bold t))
+         (,robin-256-class (:inherit isearch :foreground ,robin-256-red
+                             :background ,robin-256-background :bold t))))
 
     ))
 

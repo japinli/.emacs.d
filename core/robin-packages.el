@@ -27,6 +27,7 @@
     flycheck-ycmd
     flymd
     helm-projectile
+    imenu-list
     magit
     markdown-mode
     neotree

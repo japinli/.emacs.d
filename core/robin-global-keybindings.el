@@ -4,6 +4,10 @@
 ;;
 ;; version 0.1
 
+;;; Commentary:
+
+;;; Code:
+
 ;; keybinding for switch window
 (global-set-key (kbd "M-p") 'ace-window)
 
@@ -25,4 +29,8 @@
 ;; emamux
 (global-set-key (kbd "C-t") emamux:keymap)
 
+;; imenu-list
+(global-set-key (kbd "C-'") #'imenu-list-smart-toggle)
+
 (provide 'robin-global-keybindings)
+;;; robin-global-keybindings ends here
