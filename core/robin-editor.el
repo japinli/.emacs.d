@@ -93,7 +93,7 @@
 (require 'ycmd)
 (defvar robin-ycmd-dir (file-truename "~/.local/ycmd/"))
 (add-hook 'after-init-hook #'global-ycmd-mode)
-(set-variable 'ycmd-server-command `("python" ,(file-truename "~/.local/ycmd/ycmd")))
+(set-variable 'ycmd-server-command `("/usr/bin/python" ,(file-truename "~/.local/ycmd/ycmd")))
 (set-variable 'ycmd-global-config (expand-file-name "examples/.ycm_extra_conf.py" robin-ycmd-dir))
 (set-variable 'ycmd-extra-conf-handler 'load)
 
@@ -105,9 +105,9 @@
 (flycheck-ycmd-setup)
 
 ;; imenu-list
-(require 'imenu-list)
-(setq imenu-list-auto-resize t)
-(setq imenu-list-position 'left)
+;;(require 'imenu-list)
+;;(setq imenu-list-auto-resize t)
+;;(setq imenu-list-position 'left)
 
 (provide 'robin-editor)
 ;;; robin-editor.el ends here
