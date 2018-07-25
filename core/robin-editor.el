@@ -109,5 +109,8 @@
 ;;(setq imenu-list-auto-resize t)
 ;;(setq imenu-list-position 'left)
 
+;; setup files mode
+(add-to-list 'auto-mode-alist '("\\.plx\\'". perl-mode))
+
 (provide 'robin-editor)
 ;;; robin-editor.el ends here
