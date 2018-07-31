@@ -19,6 +19,7 @@
 (defvar robin-packages
   '(ace-window
     avy
+    bison-mode
     company
     company-ycmd
     counsel-gtags
