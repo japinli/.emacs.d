@@ -6,6 +6,7 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
 
 * markdown - Text to html conversion tool.
 * [GUN GLOBAL][] - Source code tagging system.
+* [YouCompleteMe][] -
 
 ## Emacs plugins
 
@@ -44,8 +45,34 @@ Robin is a package manager for Emacs. This plugin is based on [bbatsov's prelude
  F8          | Toggle NeoTree.
  C-t         | Emamux prefix key.
 
+## Installation
 
-Copyright (c) Japin Li, <japinli@hotmail.com>
+This installation guide is for Ubuntu. First, clone `robin` to `.emacs.d` in
+home directory. Make sure you backup your `.emacs.d`.
+
+``` shell
+$ cd ~ && git clone https://github.com/robin.git .emacs.d
+```
+
+Then, start emacs, it will install plugins. If you want to use YouCompleteMe to
+complete your C/C++ code, use the following commands to install YouCompleteMe.
+
+``` shell
+$ sudo apt-get install libclang-dev python-dev cmake build-essential
+$ cd /tmp && git clone https://github.com/Valloric/YouCompleteMe.git
+$ cd YouCompleteMe && git submodule update --init --recursive
+$ ./install.py --clang-completer
+$ cd third_party && tar czf ycmd.tgz ycmd
+$ mkdir ~/.local && mv ycmd.tgz ~/.local && cd ~/.local && tar xf ycmd.tgz
+```
+
+Finally, we should install `global` to generate symbols for C/C++ language.
+
+``` shell
+$ sudo apt-get install global
+```
+
+Enjoy yourself!
 
 [bbatsov's prelude]: https://github.com/bbatsov/prelude
 [ace-window]: https://github.com/abo-abo/ace-window
@@ -66,3 +93,4 @@ Copyright (c) Japin Li, <japinli@hotmail.com>
 [GUN GLOBAL]: https://www.gnu.org/software/global/
 [emamux]: https://github.com/syohex/emacs-emamux/
 [tmux]: https://github.com/tmux/tmux
+[YouCompleteMe]: https://github.com/Valloric/YouCompleteMe
