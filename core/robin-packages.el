@@ -19,7 +19,6 @@
 (defvar robin-packages
   '(ace-window
     avy
-    bison-mode
     company
     company-ycmd
     counsel-gtags
@@ -38,6 +37,7 @@
     swiper
     undo-tree
     which-key
+    yasnippet
     ycmd
     zop-to-char)
   "A list of packages to ensure are installed at launch.")

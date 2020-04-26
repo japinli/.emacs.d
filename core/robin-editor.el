@@ -58,6 +58,7 @@
 (require 'projectile)
 (projectile-mode t)
 (setq projectile-cache-file (expand-file-name "projectile.cache" robin-save-dir))
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 ;; swiper
 (require 'ivy)
@@ -109,8 +110,19 @@
 ;;(setq imenu-list-auto-resize t)
 ;;(setq imenu-list-position 'left)
 
+(require 'yasnippet)
+(yas-global-mode 1)
+;; set snippet dirs
+(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+;; (setq yas-snippet-dirs (append yas-snippet-dirs '("/some/dirs")))
+
+
 ;; setup files mode
 (add-to-list 'auto-mode-alist '("\\.plx\\'". perl-mode))
+
+;; https://www.emacswiki.org/emacs/WinnerMode
+(when (fboundp 'winner-mode)
+  (winner-mode 1))
 
 (provide 'robin-editor)
 ;;; robin-editor.el ends here

@@ -48,5 +48,8 @@
 (require 'robin-editor)
 (require 'robin-global-keybindings)
 
+;; save customize setting into custom.el
+(setq custom-file (expand-file-name "custom.el" robin-dir))
+
 (provide 'init)
 ;;; init.el ends here
